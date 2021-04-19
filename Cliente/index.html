@@ -17,8 +17,7 @@ body {
   font-size: 18px;
 	font-family: "Arial";
 }
-
-var ice_servers = {
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">var ice_servers = {
   iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
 };
 var localConnection;
@@ -93,7 +92,7 @@ socket.on("answer", (description) => {
 socket.on("candidate", (candidate) => {
   const conn = localConnection || remoteConnection;
   conn.addIceCandidate(new RTCIceCandidate(candidate));
-});</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Conhecimento-Geral" color="red"></tw-tag>,<tw-tag name="Matéria" color="green"></tw-tag>,<tw-tag name="Matéria-Técnica" color="blue"></tw-tag><tw-passagedata pid="1" name="Introdução do Jogo" tags="" position="1,41" size="100,100">Fala galera, tudo certo?
+});</script><tw-tag name="Conhecimento-Geral" color="red"></tw-tag>,<tw-tag name="Matéria" color="green"></tw-tag>,<tw-tag name="Matéria-Técnica" color="blue"></tw-tag><tw-passagedata pid="1" name="Introdução do Jogo" tags="" position="1,41" size="100,100">Fala galera, tudo certo?
 Somos o TIo Games trazendo um joguinho novo para vocês! Dessa vez, fizemos um Quiz que consiste em responder 50 perguntas. Essas perguntas podem ser de cunho de conhecimento geral e também pode ser sobre perguntas relacionadas ao técnico de telecomunicações.
 Dando uma breve explicação, o jogo funciona assim:
 Você deverá responder 50 perguntas de forma correta;
