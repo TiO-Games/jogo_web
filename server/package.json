@@ -7,18 +7,32 @@
     "start": "node ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TiO-Games/jogo_web.git"
   },
-  "keywords": [],
+
+  "keywords": [
+    "game",
+    "node",
+    "phaser",
+    "web"
+  ],
+
+  "engines": {
+    "node": "14.x"
+},
+
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TiO-Games/jogo_web/issues"
   },
+
   "homepage": "https://github.com/TiO-Games/jogo_web#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "socket.io": "^3.1.2"
   }
 }
