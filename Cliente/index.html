@@ -8,6 +8,38 @@
 </style>
 </head>
 <body>
+  <meta name="author" content="Ederson Torresini" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="application-name" content="ARC/TIP 2020.2" />
+<meta name="apple-mobile-web-app-title" content="ARC/TIP 2020.2" />
+<meta name="theme-color" content="#000000" />
+<meta name="msapplication-navbutton-color" content="#000000" />
+<meta name="msapplication-starturl" content="./index.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="manifest" href="./manifest.json" />
+<link rel="icon" sizes="128x128" href="./assets/logo-128.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="./assets/logo-128.png" />
+<link rel="icon" sizes="192x192" href="./assets/logo-192.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="./assets/logo-192.png" />
+<link rel="icon" sizes="256x256" href="./assets/logo-256.png" />
+<link rel="apple-touch-icon" sizes="256x256" href="./assets/logo-256.png" />
+<link rel="icon" sizes="384x384" href="./assets/logo-384.png" />
+<link rel="apple-touch-icon" sizes="384x384" href="./assets/logo-384.png" />
+<link rel="icon" sizes="512x512" href="./assets/logo-512.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="./assets/logo-512.png" />
+<script type="text/javascript">
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then((reg) => console.info("Service worker registered: ", reg))
+      .catch((err) =>
+        console.error("Error registering service worker: ", err)
+      );
+  }
+</script>
+
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play QUIZ DO TIo Games.</tw-noscript></noscript></tw-story>
 <tw-storydata name="QUIZ DO TIo Games" startnode="1" creator="Twine" creator-version="2.3.13" ifid="2BA513E0-CF6B-41A9-9D1D-9DB9BE95E953" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
   display: none;
@@ -1254,4 +1286,8 @@ root=this,factory=function(){var e,t,n=Function.call.bind(Function.apply),r=Func
 </script>
 
 </body>
+
+<script src="/socket.io/socket.io.js"></script>
+<audio id="audio" autoplay></audio>
+
 </html>
