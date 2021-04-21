@@ -1,8 +1,8 @@
 {
-  "name": "jogo_web",
+  "name": "Tio-Games",
   "scripts": {
-    "postinstall": "npm install --prefix servidor",
-    "start": "npm start --prefix servidor"
+    "postinstall": "npm install --prefix server",
+    "start": "npm start --prefix server"
   },
   "version": "0.1.0"
 }
